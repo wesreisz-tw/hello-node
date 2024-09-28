@@ -1,3 +1,3 @@
-FROM node:12-stretch
+FROM node:18.20.4-bullseye
 COPY index.js index.js
-CMD ["node", "index.js"]
+ENTRYPOINT ["node", "index.js"]
