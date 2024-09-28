@@ -1,4 +1,8 @@
 const http = require("http");
+  process.on('SIGINT', function() {
+    console.log("CNTRL-C received: exiting");
+    process.exit();
+  });
   http
    .createServer(function(request, response){
        console.log("request received");
